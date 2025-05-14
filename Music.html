@@ -18,18 +18,26 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
           </nav>
-          <img src="images/468-thumbnail.png" alt="" class="song-img">
+          <img src="images/songi.png" alt="" class="song-img">
           <h1>Despacito</h1>
           <p>Luic Fonsi Ft. puerto Rican</p>
+
+
          <audio  id="song">
+
             <source src="images/song.mp3" type="audio/mpeg">
          </audio>
+
+         //
          <input type="range" value="0" id="progress">
+
+
          <div class="controls">
             <div>
                 <i class="fa-solid fa-backward"></i>
             </div>
             <div onclick="playPause()">
+
                 <i class="fa-solid fa-play" id="ctrlIcon"></i>
             </div>
             <div>
@@ -73,7 +81,7 @@
             song.play();
             song.currentTime =  progress.value;
             ctrlIcon.classList.add("fa-pause")
-            ctrlIcon.classList.REMOVE("fa-play")
+            ctrlIcon.classList.remove("fa-play")
 
         }
 
