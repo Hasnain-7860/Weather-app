@@ -10,6 +10,7 @@
 body{
     background: #ededed;
      font-family: "Poppins", sans-serif;
+     flex-wrap: wrap;
 }
 .Stopwatch{
     width: 90%;
