@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Toast.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="showToast( successMsg)">Success</button>
+        <button onclick="showToast(errorMsg)">Error</button>
+        <button onclick="showToast(invalidMsg)">Invaild</button>
+    </div>
+    <div id="toastBox">
+
+
+    </div>
+    <script>
+        let toastBox = document.getElementById('toastBox');
+        let successMsg = 'Successfully submitted'
+        let errorMsg = 'please fix the erroe'
+        let invalidMsg = 'invalidvalid,check again '
+
+
+        function showToast(msg){
+           let toast = document.createElement('div');
+           toast.classList.add('toast');
+           toast.innerHTML = msg;
+           toastBox.appendChild(toast)
+        }
+
+//         setTimeout(() => {
+//   alert("This alert appears after 3 seconds.");
+// }, 3000);
+
+// let count = 0;
+// let timer = setInterval(() => {
+//   console.log("Count: " + count);
+//   count++;
+//   if (count > 5) clearInterval(timer); // Stop after 5 counts
+// }, 1000);
+
+
+
+
+
+
+// setTimeout(()=>{
+//     alert("this alert appears after 3 seconds");
+
+// },3000);
+
+// let count = 0;
+// let timer = setInterval(() => {
+//     console.log("Count:"+ count);
+//     count++;
+//     if(count > 5) clearInterval(timer);
+// },1000);
+
+// alert("done")
+
+
+// let userInput;
+// let positiveNumber;
+// do{
+//     userInput = prompt("enter any positive number");
+//     positiveNumber = parseFloat(userInput);
+// }while(isNaN(positiveNumber)|| positiveNumber < 0);
+// console.log("you enter a valid positive number:",positiveNumber)
+
+
+
+// var year = 2003;
+// if(year % 4 ===0 && year % 100 !== 0 || year % 400 === 0){
+//     console.log(year, "it's a leap year");
+// } 
+// else{
+//     console.log(year, "it's not a leap year")
+// }
+
+
+// for( var i=1; i<=5; i++){
+//     var pattern = " ";
+//     for(var j=1; j<=i; j++){
+//         pattern = pattern + " *";
+//     }
+
+
+//  console.log(pattern)}
+
+
+//without function javascript
+
+var a = 5,
+b= 10;
+
+var sum1 = a+b;
+console.log(sum1)
+
+var a = 5,
+b= 15;
+
+var sum2 = a+b;
+console.log(sum2)
+
+
+
+var a = 15,
+b= 15;
+
+var sum3 = a+b;
+console.log(sum3)
+
+
+var a = 25,
+b= 15;
+
+var sum4 = a+b;
+console.log(sum4)
+
+var a = 35,
+b= 20;
+
+var sum5 = a+b;
+console.log(sum5)
+
+
+
+
+//with Function javascript
+
+function sum(a,b){
+return a+b;
+}
+console.log(sum(5,5))
+console.log(sum(10,5))
+console.log(sum(50,5))
+
+
+
+
+function sum(){
+    var a = 5,
+     b = 15;
+     console.log(a+b);
+
+}
+sum();
+
+
+// function sum (c,d){
+//     return c+d;
+// }
+// console.log(sum(100,200))
+
+
+function  greet(name){
+    console.log("Hello " + name + " How are you")
+}
+
+
+greet("Hasnain")
+greet("Mustafa")
+
+
+function isEven(number) {
+  return number % 2 === "0";
+}
+console.log(isEven(4)); 
+console.log(isEven(7)); 
+
+
+
+// const obj = '{"name:Hasnain", "date:28"}';
+
+
+// const obj = '{"name": "Hasnain", "date": "28"}';
+// const parsed = JSON.parse(obj);
+// console.log(parsed.name);
+// console.log(parsed.date); 
+
+
+
+
+const jsonStr = '{"city": "Delhi", "population": 19000000}';
+const data = JSON.parse(jsonStr);
+console.log(data.city);
+
+
+
+// const str = "42";
+// const num = Number(str);
+// console.log(num);
+// console.log(typeof+ num)
+
+
+
+// const num = 10;
+// const num1 = String(num);
+// console.log(num1)
+// console.log(typeof+ num1) 
+
+// let num = 123;
+
+// let str = Number(num);
+// console.log(typeof + str)
+
+
+// let num = 123;
+// let str = num.toString();
+
+// console.log(typeof num); 
+// console.log(typeof str); 
+
+// let num1 = 265;
+// let str1 = num1.toString();
+// console.log(str1)
+// console.log(typeof str1)
+
+
+// let str2 = "265";
+// let num2 = Number(str2);
+// console.log(num2)
+// console.log(typeof num2)
+
+
+
+// const obj = '{"name":"Hasnain" , "age" : 25}';
+// const parsed = JSON.parse(obj)
+// console.log(parsed.name)
+// console.log(parsed.age)
+
+
+
+// const obj1 ='{name:"Mustafa", age:25}';
+// const parsedd = JSON.stringify(obj1);
+// console.log(parsedd)
+
+
+
+// const obj2 = {name: "Prakash", age:30};
+// const jsonkr = JSON.stringify({name: obj2.name},{age:obj2.name});
+// console.log(jsonkr)
+// console.log(jsonkr.age)
+
+// const string = '{"name" : "bhai", "age":35}';
+// const obje = JSON.parse(string);
+// console.log(obje.name)
+// console.log(obje.age)
+
+
+
+
+// const objj = {student: "Prakash" , marks:10};
+// console.log(objj.student);
+// console.log(objj.marks)
+
+
+
+// const obj = {Student: "Hasnain", Marks:90};
+// console.log(obj.Student)
+// console.log(obj.Marks)
+// console.log(typeof obj)
+
+
+
+
+const obj = '{"Student": "Hasnain", "Marks":90}';
+console.log(typeof obj)
+console.log(obj.Student)
+console.log(obj.Marks)
+
+
+
+const obj1 = {"Student" : "Prakash", "Marks": 90};
+
+
+const obje = JSON.stringify(obj1)
+console.log(obje)
+console.log(typeof obje);
+console.log(obj.Student);
+console.log(typeof obj);
+console.log(obj.Marks);
+console.log(obj.Marks);
+
+
+    </script>
+</body>
+</html>
+
